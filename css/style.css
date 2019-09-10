@@ -1,0 +1,107 @@
+html {
+    position: relative;
+}
+
+body{
+    margin-bottom: 100px;
+    margin-top: 20px;
+    font-family: 'Gill Sans MT';
+}
+
+.fotoProfil{
+    width: 200px;
+    border: 5px solid #333;
+    border-radius: 50%;
+}
+hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+section {
+    min-height: 600px;
+}
+.pKiri, .pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+    
+}
+
+.pKanan {
+    transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio{
+    background-color: #eee;
+}
+.contact {
+    min-height: 800px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-color: #333;
+}
+footer p {
+    /* padding-top: 10px; */
+    color: #aaa;
+    font-size:0.9em;
+}
+.navbar{
+    opacity: 0.8;
+}
+
+.jumbotron{
+    margin-top: 56px;
+    height: 400px;
+    background-image: url('../img/header2.jpg'); 
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: 0 -100px;
+    overflow: hidden;
+}
+.jumbotron img{
+    width: 200px;
+    border: 5px solid #333;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.jumbotron h1, .jumbotron p{
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: #eee;
+}
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 0.3s;
+}
+
+.portfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+#pengalaman p{
+    text-align: right;
+    font-size: 15px;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.thumbnail img{
+    width: 300px;
+    
+}
+
+@font-face {
+	font-family: 'Gill Sans MT';
+	src: url('../33535gillsansmt.eot');
+	src: local('33535gillsansmt'), url('../33535gillsansmt.woff') format('woff'), url('../33535gillsansmt.ttf') format('truetype');
+}
